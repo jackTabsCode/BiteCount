@@ -5,6 +5,7 @@
 //  Created by Jack Taylor on 6/23/23.
 //
 
+import MapKit
 import SwiftUI
 
 struct NewFoodView: View {
@@ -24,6 +25,7 @@ struct NewFoodView: View {
 						TextField("0", value: $food.weightInGrams, format: .number)
 							.multilineTextAlignment(.trailing)
 							.opacity(0.5)
+							.keyboardType(.decimalPad)
 					}
 				}
 				Section(header: Text("Macros")) {
@@ -33,6 +35,7 @@ struct NewFoodView: View {
 						TextField("0", value: $food.protein, format: .number)
 							.multilineTextAlignment(.trailing)
 							.opacity(0.5)
+							.keyboardType(.decimalPad)
 					}
 					HStack {
 						Text("Carbohydrates (g)")
@@ -40,6 +43,7 @@ struct NewFoodView: View {
 						TextField("0", value: $food.carbs, format: .number)
 							.multilineTextAlignment(.trailing)
 							.opacity(0.5)
+							.keyboardType(.decimalPad)
 					}
 					HStack {
 						Text("Fat (g)")
@@ -47,9 +51,11 @@ struct NewFoodView: View {
 						TextField("0", value: $food.fat, format: .number)
 							.multilineTextAlignment(.trailing)
 							.opacity(0.5)
+							.keyboardType(.decimalPad)
 					}
 				}
 			}
+
 			.toolbar {
 				ToolbarItemGroup(placement: .cancellationAction) {
 					Button {

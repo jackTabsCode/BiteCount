@@ -29,6 +29,7 @@ struct NewLogView: View {
 						TextField("1", value: $servings, format: .number)
 							.multilineTextAlignment(.trailing)
 							.opacity(0.5)
+							.keyboardType(.decimalPad)
 					}
 					Picker("Meal Type", selection: $mealType) {
 						ForEach(Meal.allCases) { meal in
@@ -37,7 +38,7 @@ struct NewLogView: View {
 						}
 					}
 				}
-				Section(header: Text("Food")) {
+				Section(header: Text("My Library")) {
 					ForEach(foods) { food in
 						Button {
 							selectedFood = food

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct LogView: View {
+	@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
 	@Binding var foods: [Food]
+	@Binding var logs: [Log]
 
 	var log: Log
 	var food: Food {
@@ -51,7 +54,19 @@ struct LogView: View {
 						.opacity(0.5)
 				}
 			}
-		}.navigationTitle(log.name)
+		}
+		.navigationTitle(log.name)
+		.toolbar {
+			ToolbarItemGroup(placement: .destructiveAction) {
+				Button(role: .destructive) {
+					logs.removeAll(where: { $0.id == log.id })
+
+					self.presentationMode.wrappedValue.dismiss()
+				} label: {
+					Text("Delete")
+				}
+			}
+		}
 	}
 }
 
@@ -62,6 +77,7 @@ struct LogView_Previews: PreviewProvider {
 	static var previews: some View {
 		LogView(
 			foods: .constant([apple]),
+			logs: .constant([]),
 			log: Log(foodId: apple.id, name: "My Lunch", meal: .breakfast, date: Date(), servings: 1)
 		)
 	}

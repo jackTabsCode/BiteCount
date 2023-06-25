@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+	@Environment(\.scenePhase) private var scenePhase
+
 	@Binding var foods: [Food]
 	@Binding var logs: [Log]
 
 	@State private var isPresentingNewFoodView = false
 	@State private var isPresentingNewLogView = false
+	@State private var showingDeleteAlert = false
 
-	@Environment(\.scenePhase) private var scenePhase
 	let saveAction: () -> Void
 
 	var totals: Totals {
@@ -32,6 +34,10 @@ struct HomeView: View {
 		}
 
 		return totals
+	}
+
+	func removeLogs(at offsets: IndexSet) {
+		logs.remove(atOffsets: offsets)
 	}
 
 	var body: some View {
@@ -66,7 +72,7 @@ struct HomeView: View {
 				Section(header: Text("Logs")) {
 					ForEach(logs) { log in
 						VStack {
-							NavigationLink(destination: LogView(foods: $foods, log: log)) {
+							NavigationLink(destination: LogView(foods: $foods, logs: $logs, log: log)) {
 								HStack {
 									Label(log.name, systemImage: "list.clipboard")
 									Spacer()
@@ -76,6 +82,7 @@ struct HomeView: View {
 							}
 						}
 					}
+					.onDelete(perform: removeLogs)
 				}
 			}
 			.navigationTitle("Today")
