@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04947FF02C1BADF10074131A /* MacroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04947FEF2C1BADF10074131A /* MacroView.swift */; };
+		04947FF22C1BB46A0074131A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 04947FF12C1BB46A0074131A /* .gitignore */; };
 		242354152A4673F5004BBA34 /* BiteCountApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242354142A4673F5004BBA34 /* BiteCountApp.swift */; };
 		242354192A4673F6004BBA34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242354182A4673F6004BBA34 /* Assets.xcassets */; };
 		2423541C2A4673F6004BBA34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2423541B2A4673F6004BBA34 /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		04947FEE2C1BAB810074131A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04947FEF2C1BADF10074131A /* MacroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroView.swift; sourceTree = "<group>"; };
+		04947FF12C1BB46A0074131A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		242354112A4673F5004BBA34 /* BiteCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		242354142A4673F5004BBA34 /* BiteCountApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteCountApp.swift; sourceTree = "<group>"; };
 		242354182A4673F6004BBA34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		242354082A4673F5004BBA34 = {
 			isa = PBXGroup;
 			children = (
+				04947FF12C1BB46A0074131A /* .gitignore */,
 				242354132A4673F5004BBA34 /* BiteCount */,
 				242354122A4673F5004BBA34 /* Products */,
 			);
@@ -143,7 +146,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					242354102A4673F5004BBA34 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2423541C2A4673F6004BBA34 /* Preview Assets.xcassets in Resources */,
+				04947FF22C1BB46A0074131A /* .gitignore in Resources */,
 				242354192A4673F6004BBA34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +243,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -299,6 +304,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
