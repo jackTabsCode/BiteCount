@@ -1,6 +1,6 @@
 //
 //  MacroView.swift
-//  BiteCount
+//  BiteJournal
 //
 //  Created by Jack Taylor on 6/13/24.
 //

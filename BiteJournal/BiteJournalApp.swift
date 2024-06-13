@@ -1,6 +1,6 @@
 //
-//  BiteCountApp.swift
-//  BiteCount
+//  BiteJournalApp.swift
+//  BiteJournal
 //
 //  Created by Jack Taylor on 6/23/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BiteCountApp: App {
+struct BiteJournalApp: App {
 	@StateObject private var store = Store()
 	@State private var errorWrapper: ErrorWrapper?
 

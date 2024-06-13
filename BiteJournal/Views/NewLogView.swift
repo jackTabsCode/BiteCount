@@ -1,6 +1,6 @@
 //
 //  NewLogView.swift
-//  BiteCount
+//  BiteJournal
 //
 //  Created by Jack Taylor on 6/24/23.
 //
