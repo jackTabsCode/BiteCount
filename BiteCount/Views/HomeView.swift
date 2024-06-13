@@ -44,30 +44,10 @@ struct HomeView: View {
 		NavigationStack {
 			List {
 				Section(header: Text("Totals")) {
-					HStack {
-						Label("Calories (Cal)", systemImage: "flame")
-						Spacer()
-						Text(String(format: "%.1f Cal", totals.calories))
-							.opacity(0.5)
-					}
-					HStack {
-						Label("Protein (g)", systemImage: "atom")
-						Spacer()
-						Text(String(format: "%.1f g", totals.protein))
-							.opacity(0.5)
-					}
-					HStack {
-						Label("Carbohydrates (g)", systemImage: "bolt")
-						Spacer()
-						Text(String(format: "%.1f g", totals.carbs))
-							.opacity(0.5)
-					}
-					HStack {
-						Label("Fat (g)", systemImage: "circle.hexagongrid")
-						Spacer()
-						Text(String(format: "%.1f g", totals.fat))
-							.opacity(0.5)
-					}
+					MacroView(name: "Calories", unit: "Cal", image: "flame", amount: totals.calories)
+					MacroView(name: "Protein", unit: "g", image: "atom", amount: totals.protein)
+					MacroView(name: "Carbohydrates", unit: "g", image: "bolt", amount: totals.carbs)
+					MacroView(name: "Fat", unit: "g", image: "circle.hexagongrid", amount: totals.fat)
 				}
 				Section(header: Text("Logs")) {
 					ForEach(logs) { log in

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04947FF02C1BADF10074131A /* MacroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04947FEF2C1BADF10074131A /* MacroView.swift */; };
 		242354152A4673F5004BBA34 /* BiteCountApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242354142A4673F5004BBA34 /* BiteCountApp.swift */; };
 		242354192A4673F6004BBA34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242354182A4673F6004BBA34 /* Assets.xcassets */; };
 		2423541C2A4673F6004BBA34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2423541B2A4673F6004BBA34 /* Preview Assets.xcassets */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04947FEE2C1BAB810074131A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04947FEF2C1BADF10074131A /* MacroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroView.swift; sourceTree = "<group>"; };
 		242354112A4673F5004BBA34 /* BiteCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		242354142A4673F5004BBA34 /* BiteCountApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiteCountApp.swift; sourceTree = "<group>"; };
 		242354182A4673F6004BBA34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		242354132A4673F5004BBA34 /* BiteCount */ = {
 			isa = PBXGroup;
 			children = (
+				04947FEE2C1BAB810074131A /* Info.plist */,
 				242354232A46755A004BBA34 /* Models */,
 				242354222A46754D004BBA34 /* Views */,
 				242354142A4673F5004BBA34 /* BiteCountApp.swift */,
@@ -94,6 +98,7 @@
 				24B319822A46BFEC00A6E66A /* LogView.swift */,
 				24B319882A46CBB600A6E66A /* ErrorView.swift */,
 				24B3198A2A46CCC300A6E66A /* NewLogView.swift */,
+				04947FEF2C1BADF10074131A /* MacroView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				24B319832A46BFEC00A6E66A /* LogView.swift in Sources */,
 				24B3197F2A469D3000A6E66A /* NewFoodView.swift in Sources */,
 				24B319812A46BA4700A6E66A /* Log.swift in Sources */,
+				04947FF02C1BADF10074131A /* MacroView.swift in Sources */,
 				242354152A4673F5004BBA34 /* BiteCountApp.swift in Sources */,
 				24B319892A46CBB600A6E66A /* ErrorView.swift in Sources */,
 				24B3198D2A46D8A100A6E66A /* Totals.swift in Sources */,
@@ -322,6 +328,7 @@
 				DEVELOPMENT_TEAM = DFRTA76KNC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BiteCount/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +358,7 @@
 				DEVELOPMENT_TEAM = DFRTA76KNC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BiteCount/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
