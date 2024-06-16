@@ -90,8 +90,8 @@ struct HomeView: View {
 			.sheet(isPresented: $isPresentingNewLogView) {
 				NewLogView(isPresentingNewLogView: $isPresentingNewLogView, foods: $foods, logs: $logs)
 			}
-			.onChange(of: scenePhase) { phase in
-				if phase == .inactive { saveAction() }
+			.onChange(of: scenePhase) {
+				if scenePhase == .inactive { saveAction() }
 			}
 		}
 	}
